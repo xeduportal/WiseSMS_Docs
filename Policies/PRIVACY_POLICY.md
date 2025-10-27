@@ -66,21 +66,18 @@ Location access is always optional and requires explicit permission. You can rev
 ### 4. Camera and Media
 
 **What We Collect:**
-- Photos and videos you capture using the in-app camera
-- Images and media files you select from your device gallery
-- Audio recordings for voice messages (if enabled)
+- Photos you capture using the in-app camera
+- Images files you select from your device gallery
 
 **How We Use It:**
-- To include photos and videos in MMS messages
+- To include photos in MMS messages
 - To create custom themes from images
-- To enable voice messaging features
-- To support media attachments in conversations
 
 **Storage:**  
-Media files are stored locally on your device’s internal storage, protected by Android’s app sandbox. When sent in messages, they are transmitted directly through your carrier's MMS service.
+Image files are stored locally on your device’s internal storage, protected by Android’s app sandbox. When sent in messages, they are transmitted directly through your carrier's MMS service.
 
 **Processing:**
-- NSFW content detection runs entirely on your device using local AI models
+- Inappropriate content detection runs entirely on your device using local AI models
 - No images are sent to external servers for content analysis
 - Theme colour extraction from images is performed locally
 
@@ -97,32 +94,19 @@ Media files are stored locally on your device’s internal storage, protected by
 - **Privacy Policy:** <https://cloud.google.com/terms/cloud-privacy-notice>
 
 #### Google Gemini AI
-- **Purpose:** Provide regional style transfer and creative language transformation  
-- **Data Shared:** Message text you choose to transform (sent to Google's servers)  
+- **Purpose:** Power in-app AI chat, provide answers, creative writing help, and style transformations.  
+- **Data Shared:** Message text you send to the AI chat or choose to transform (processed by Google’s servers).  
 - **Privacy Policy:** <https://ai.google/responsibility/principles/>
 
-#### Google Drive (Cloud Backup - Optional)
-- **Purpose:** Back up your themes and settings to your Google account  
-- **Data Shared:** Theme configurations, app settings (no message content)  
-- **Authentication:** OAuth 2.0 with your explicit authorisation  
-- **Privacy Policy:** <https://policies.google.com/privacy>
-
-**Important:** Translation and style transfer features require sending message text to Google's servers. These features are entirely optional and require explicit user action.
-
 ### 6. AI Assistant and Conversation Tracking
-
-**Local Processing:**
-- Daily conversation summaries generated entirely on your device
-- AI conversation tracking for usage limits and insights
-- Topic analysis and preference learning stored locally
 
 **Cloud Processing (Optional):**
 - When you use the AI Assistant feature, messages are sent to configured AI providers (Google Gemini)
 - Cloud AI usage is tracked for daily limit enforcement
-- You control whether to use cloud-based or local AI features
+- You control whether to use cloud-based AI features
 
 **Data Retention:**  
-Conversation tracking data is stored locally and never transmitted to our servers. You can clear this data at any time through the app settings.
+Conversation tracking data is stored locally and never transmitted to our servers. You can clear this data at any by uninstalling the app.
 
 ### 7. Device Information
 
@@ -169,11 +153,6 @@ Transaction verification data is shared with Google Play for licence validation.
 
 **How We Use It:**
 - To enable sharing custom themes with other users
-- To store shared themes in Firebase Cloud Storage
-
-**Third-Party Services:**  
-Firebase (owned by Google) is used for theme storage and sharing.  
-- **Privacy Policy:** <https://firebase.google.com/support/privacy>
 
 **Control:**  
 Theme sharing is entirely optional. You choose which themes to share and can delete shared themes at any time.
@@ -205,10 +184,9 @@ Notification data is stored locally on your device.
 The vast majority of data processing occurs entirely on your device:
 - Message storage and retrieval
 - Contact synchronisation
-- NSFW content detection
+- Inappropriate content detection
 - Conversation analysis and summaries
 - Theme customisation
-- Local AI features
 
 ### Cloud Processing (Optional)
 Only when you explicitly use these features:
@@ -216,8 +194,6 @@ Only when you explicitly use these features:
 - Style transfer (Google Gemini)
 - Cloud AI Assistant (Google Gemini)
 - Location sharing (Google Maps)
-- Theme sharing (Firebase)
-- Cloud backup (Google Drive)
 
 ## Data Sharing and Disclosure
 
@@ -241,8 +217,6 @@ Only when you explicitly use these features:
 - **Google Translate:** Message text when you use translation features
 - **Google Gemini AI:** Message text when you use AI assistant or style transfer features
 - **Google Play:** Billing and licence validation data for premium features
-- **Firebase:** Theme data when you use cloud sharing features
-- **Google Drive:** Backup data when you use cloud backup features
 
 #### 3. Legal Requirements
 We may disclose your information if required to do so by law or in response to:
@@ -287,27 +261,16 @@ We may disclose your information if required to do so by law or in response to:
 - **Contacts:** Synced with your device contacts; removed when you delete them
 - **Media:** Stored on your device until you delete them
 - **Settings:** Retained until you uninstall the app or clear app data
-- **Conversation Tracking:** Stored locally; can be cleared through app settings
-
-### Cloud Data (Optional Features)
-- **Shared Themes:** Retained in Firebase until you delete them
-- **Cloud Backups:** Retained in your Google Drive until you delete them
-- **Google Service Data:** Subject to Google's retention policies
+- **Conversation Tracking:** Stored locally; can be removed by uninstalling app.
 
 ### Deletion
 You can delete your local data by:
-- Deleting individual messages or conversations within the app
 - Clearing app data through Android Settings > Apps > Wise SMS > Storage > Clear Data
 - Uninstalling the application
 
-For cloud data:
-- Delete shared themes through the app's theme management interface
-- Revoke Google Drive access and delete backup files from your Google Drive
-- Contact the respective service providers (Google) for data deletion
-
 ## Children's Privacy
 
-Wise SMS is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.
+Wise SMS is intended for children. We do not knowingly collect personal information from children under 13.
 
 **Parental Controls:** The app includes optional parental control features designed to help parents monitor and restrict messaging for minors. These features:
 - Allow parents to set time restrictions on app usage
@@ -323,7 +286,6 @@ If you are a parent or guardian and believe your child has provided us with pers
 You have the right to:
 - **Access:** View all data stored by the app through its interface
 - **Modify:** Edit or delete messages, contacts, and settings at any time
-- **Export:** Back up your data using the cloud backup feature
 - **Delete:** Remove all app data by clearing app data or uninstalling
 
 ### Permission Management
@@ -337,8 +299,6 @@ You can manage permissions at any time through Android Settings:
 - **AI Features:** Don’t use the AI Assistant or disable it in settings
 - **Translation:** Don’t use the translation feature; no data is sent if you don’t use it
 - **Location Sharing:** Don’t use the location sharing feature
-- **Cloud Backup:** Don’t enable cloud backup features
-- **Theme Sharing:** Don’t share themes publicly
 - **Google Services:** Opt out of optional Google service features
 
 ### Advertising
@@ -351,7 +311,7 @@ We do not display advertisements, so there are no advertising IDs or tracking fo
 - **Cloud Services:** Data sent to Google services may be processed in various countries where Google operates data centres
 
 ### Google Services
-When you use optional features that rely on Google services (Maps, Translate, Gemini, Firebase, Drive), your data may be transferred to and processed in countries outside your own. Google complies with applicable data protection laws including GDPR for European users.
+When you use optional features that rely on Google services (Maps, Translate, Gemini), your data may be transferred to and processed in countries outside your own. Google complies with applicable data protection laws including GDPR for European users.
 
 ## Changes to This Privacy Policy
 
@@ -376,8 +336,6 @@ This app integrates with several third-party services. Each service has its own 
 - **Google Translate:** https://cloud.google.com/terms/cloud-privacy-notice
 - **Google Gemini AI:** https://ai.google/responsibility/principles/
 - **Google Play Services:** https://policies.google.com/privacy
-- **Firebase:** https://firebase.google.com/support/privacy
-- **Google Drive:** https://policies.google.com/privacy
 
 **Your Responsibility:** We encourage you to review the privacy policies of these third-party services to understand how they collect, use, and share your data.
 
@@ -430,7 +388,7 @@ If you have questions or concerns about this Privacy Policy or our data practice
 
 **Developer Contact:**
 - **App Name:** Wise SMS
-- **Contact Method:** [Your Contact Email]
+- **Contact Method:** info@wisesms.app
 - **Support:** Available through Google Play Store listing
 
 **Response Time:** We will respond to privacy-related inquiries within 30 days.
@@ -472,20 +430,3 @@ You can withdraw consent at any time by:
 - Revoking app permissions through Android settings
 - Disabling optional features within the app
 - Uninstalling the application
-
----
-
-## Summary for Google Play Store
-
-**Privacy Summary:**  
-Wise SMS stores message data locally on your device and does not transmit messages to our servers. Optional features like translation, AI assistance, and location sharing use Google services with your explicit consent. We do not sell your data or use it for advertising. Your carrier handles SMS/MMS transmission according to their privacy policy.
-
-**Data Safety:**
-- **Collected:** Messages (local only), Contacts (local only), Location (optional), Photos (optional)
-- **Shared:** Only with Google services when you use optional features (translation, AI, maps)
-- **Security:** Protected by Android’s native file encryption and app sandboxing; TLS for cloud communications
-- **Deletion:** Full control — delete data anytime through app settings or uninstall
-
----
-
-**Last Updated:** October 27, 2025
