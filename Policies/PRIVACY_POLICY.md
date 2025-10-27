@@ -1,16 +1,15 @@
 # Privacy Policy for Wise SMS
 
-**Last Updated:** October 27, 2025
-
+**Last Updated:** October 27, 2025  
 **Effective Date:** October 27, 2025
 
 ## Introduction
 
-Wise SMS ("we," "our," or "the App") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Android messaging application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not use the application.
+Wise SMS ("we," "our," or "the App") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Android messaging application. Please read this policy carefully. If you do not agree with the terms, please do not use the application.
 
 ## App Overview
 
-Wise SMS is a messaging application that provides SMS/MMS functionality with enhanced features including AI assistance, translation services, theme customization, and parental controls.
+Wise SMS is a messaging application that provides SMS/MMS functionality with enhanced features including AI assistance, translation services, theme customisation, and parental controls.
 
 ## Information We Collect
 
@@ -23,11 +22,12 @@ Wise SMS is a messaging application that provides SMS/MMS functionality with enh
 
 **How We Use It:**
 - To send, receive, and display messages
-- To provide conversation threading and organization
+- To provide conversation threading and organisation
 - To enable message search and filtering
 - To display message delivery and read status
 
-**Storage:** All messages are stored locally on your device in an encrypted SQLite database. We do not transmit your message content to our servers.
+**Storage:**  
+All messages are stored locally on your device within Android’s protected app storage (sandbox). We do not transmit your message content to our servers.
 
 ### 2. Contacts Information
 
@@ -39,10 +39,11 @@ Wise SMS is a messaging application that provides SMS/MMS functionality with enh
 **How We Use It:**
 - To display contact information in conversations
 - To enable contact search and selection when composing messages
-- To synchronize with your device's contact database
-- To provide contact-based features like conversation organization
+- To synchronise with your device's contact database
+- To provide contact-based features like conversation organisation
 
-**Storage:** Contact data is stored locally on your device. We access your device contacts through Android's Contacts API but do not transmit this information to external servers.
+**Storage:**  
+Contact data is stored locally on your device. We access your device contacts through Android's Contacts API but do not transmit this information to external servers.
 
 ### 3. Location Information
 
@@ -56,9 +57,11 @@ Wise SMS is a messaging application that provides SMS/MMS functionality with enh
 - To display location information on maps within conversations
 - To provide location-based features you explicitly enable
 
-**Third-Party Services:** Location data shared in messages uses Google Maps API. When you share location, Google's privacy policy applies to map display and geocoding services.
+**Third-Party Services:**  
+Location data shared in messages uses Google Maps API. When you share location, Google's privacy policy applies to map display and geocoding services.
 
-**Control:** Location access is always optional and requires explicit permission. You can revoke location permissions at any time through your device settings.
+**Control:**  
+Location access is always optional and requires explicit permission. You can revoke location permissions at any time through your device settings.
 
 ### 4. Camera and Media
 
@@ -68,66 +71,58 @@ Wise SMS is a messaging application that provides SMS/MMS functionality with enh
 - Audio recordings for voice messages (if enabled)
 
 **How We Use It:**
-- To include photos and videos in MMS messages (with parental controls)
+- To include photos and videos in MMS messages
 - To create custom themes from images
 - To enable voice messaging features
 - To support media attachments in conversations
 
-**Storage:** Media files are stored locally on your device. When sent in messages, they are transmitted directly through your carrier's MMS service.
+**Storage:**  
+Media files are stored locally on your device’s internal storage, protected by Android’s app sandbox. When sent in messages, they are transmitted directly through your carrier's MMS service.
 
-**Privacy-First Processing - NO IMAGES SENT TO SERVERS:**
-- **All image analysis happens on your device** - no external servers involved
-- **NSFW content detection** runs entirely locally using on-device AI models
-- **For incoming media:** Automatic NSFW detection on received images
-- **For outgoing media:** Parents can enable NSFW checks before sending (optional)
-- **Sending Gate:** If NSFW check is enabled and fails, the image cannot be sent via MMS
-- **Theme extraction:** Color palette extraction from images is performed locally
-- **Zero server uploads:** No images are ever uploaded to our servers or third-party services for analysis
-
-**Parental Controls for Photo Sharing:**
-- Photo/video sharing is **OFF by default** for child accounts
-- Parents must knowingly enable photo sharing through Carer Controls
-- Parents can enable optional NSFW checks on outgoing images before sending
-- Parents can disable photo sharing at any time
-- All controls are managed by the parent/guardian, not the child
+**Processing:**
+- NSFW content detection runs entirely on your device using local AI models
+- No images are sent to external servers for content analysis
+- Theme colour extraction from images is performed locally
 
 ### 5. Google Services Integration
 
 #### Google Maps
-- **Purpose:** Display location information and enable location sharing in messages
-- **Data Shared:** Location coordinates when you explicitly share your location
-- **Privacy Policy:** [Google Maps Privacy Policy](https://policies.google.com/privacy)
+- **Purpose:** Display location information and enable location sharing in messages  
+- **Data Shared:** Location coordinates when you explicitly share your location  
+- **Privacy Policy:** <https://policies.google.com/privacy>
 
 #### Google Translate API
-- **Purpose:** Translate messages between different languages
-- **Data Shared:** Message text you choose to translate (sent to Google's servers)
-- **Privacy Policy:** [Google Cloud Privacy Policy](https://cloud.google.com/terms/cloud-privacy-notice)
+- **Purpose:** Translate messages between different languages  
+- **Data Shared:** Message text you choose to translate (sent to Google's servers)  
+- **Privacy Policy:** <https://cloud.google.com/terms/cloud-privacy-notice>
 
 #### Google Gemini AI
-- **Purpose:** Provide regional style transfer and creative language transformation
-- **Data Shared:** Message text you choose to transform (sent to Google's servers)
-- **Privacy Policy:** [Google AI Privacy Policy](https://ai.google/responsibility/principles/)
+- **Purpose:** Provide regional style transfer and creative language transformation  
+- **Data Shared:** Message text you choose to transform (sent to Google's servers)  
+- **Privacy Policy:** <https://ai.google/responsibility/principles/>
+
+#### Google Drive (Cloud Backup - Optional)
+- **Purpose:** Back up your themes and settings to your Google account  
+- **Data Shared:** Theme configurations, app settings (no message content)  
+- **Authentication:** OAuth 2.0 with your explicit authorisation  
+- **Privacy Policy:** <https://policies.google.com/privacy>
 
 **Important:** Translation and style transfer features require sending message text to Google's servers. These features are entirely optional and require explicit user action.
 
-**Note:** Cloud backup features are not currently implemented in this version.
-
 ### 6. AI Assistant and Conversation Tracking
 
-**Optional Cloud AI Feature:**
-- When you use the AI Assistant feature, messages are sent to Google Gemini
-- AI usage is tracked for daily limit enforcement
-- This feature is entirely optional and requires explicit user action
-
 **Local Processing:**
-- Conversation tracking and analytics run locally on your device
-- **NSFW content detection** uses local AI models running entirely on your device
-  - Checks received images automatically
-  - Can check outgoing images (if parent enables this feature)
-  - **NO images are ever sent to external servers for analysis**
-  - All processing happens locally before any image is sent via MMS
+- Daily conversation summaries generated entirely on your device
+- AI conversation tracking for usage limits and insights
+- Topic analysis and preference learning stored locally
 
-**Data Retention:** All conversation tracking data is stored locally and never transmitted to our servers. You can clear this data at any time through the app settings.
+**Cloud Processing (Optional):**
+- When you use the AI Assistant feature, messages are sent to configured AI providers (Google Gemini)
+- Cloud AI usage is tracked for daily limit enforcement
+- You control whether to use cloud-based or local AI features
+
+**Data Retention:**  
+Conversation tracking data is stored locally and never transmitted to our servers. You can clear this data at any time through the app settings.
 
 ### 7. Device Information
 
@@ -143,39 +138,45 @@ Wise SMS is a messaging application that provides SMS/MMS functionality with enh
 - To troubleshoot technical issues
 - To determine network availability for features that require connectivity
 
-**Storage:** This information is used within the app and is not transmitted to external servers except as part of standard Google Play Services functionality.
+**Storage:**  
+This information is used within the app and is not transmitted to external servers except as part of standard Google Play Services functionality.
 
 ### 8. Premium Features and Billing
 
 **What We Collect:**
 - Google Play purchase tokens and transaction IDs
-- License activation and validation timestamps
+- Licence activation and validation timestamps
 - Feature usage statistics for premium features
-- Device fingerprint (for license portability, not restriction)
+- Device fingerprint (for licence portability, not restriction)
 
 **How We Use It:**
 - To validate premium feature access
-- To enable license portability across your devices
-- To prevent unauthorized feature access
+- To enable licence portability across your devices
+- To prevent unauthorised feature access
 - To provide customer support for billing issues
 
-**Third-Party Processing:** All payment processing is handled by Google Play Billing. We do not collect or store credit card information.
+**Third-Party Processing:**  
+All payment processing is handled by Google Play Billing. We do not collect or store credit card information.
 
-**Data Shared with Google:** Transaction verification data is shared with Google Play for license validation.
+**Data Shared with Google:**  
+Transaction verification data is shared with Google Play for licence validation.
 
-### 9. Theme Customization (Local Only)
+### 9. Theme Sharing (Optional)
 
 **What We Collect:**
-- Custom theme configurations you create
-- Theme metadata (name, colors, creation date)
-- Theme preferences and settings
+- Custom theme configurations you choose to share
+- Theme metadata (name, colours, creation date)
 
 **How We Use It:**
-- To provide personalized app appearance
-- To save and apply your custom themes
-- To enable theme customization features
+- To enable sharing custom themes with other users
+- To store shared themes in Firebase Cloud Storage
 
-**Storage:** All theme data is stored locally on your device. Theme sharing features are not currently implemented in this version.
+**Third-Party Services:**  
+Firebase (owned by Google) is used for theme storage and sharing.  
+- **Privacy Policy:** <https://firebase.google.com/support/privacy>
+
+**Control:**  
+Theme sharing is entirely optional. You choose which themes to share and can delete shared themes at any time.
 
 ### 10. Notifications
 
@@ -187,29 +188,27 @@ Wise SMS is a messaging application that provides SMS/MMS functionality with enh
 **How We Use It:**
 - To display message notifications
 - To show unread message counts on the app icon
-- To provide customizable notification sounds and vibrations
+- To provide customisable notification sounds and vibrations
 
-**Storage:** Notification data is stored locally on your device.
+**Storage:**  
+Notification data is stored locally on your device.
 
 ## How We Use Your Information
 
 ### Primary Uses
-1. **Core Messaging Functionality:** To send, receive, and display SMS/MMS messages
-2. **Contact Management:** To organize and display your conversations with contacts
-3. **Feature Enhancement:** To provide optional features like translation, AI assistance, and theme customization
+1. **Core Messaging Functionality:** To send, receive, and display SMS/MMS messages  
+2. **Contact Management:** To organise and display your conversations with contacts  
+3. **Feature Enhancement:** To provide optional features like translation, AI assistance, and theme customisation  
 4. **App Improvement:** To identify and fix bugs, improve performance, and enhance user experience
 
 ### Local Processing
 The vast majority of data processing occurs entirely on your device:
 - Message storage and retrieval
-- Contact synchronization
-- **NSFW content detection** (for both received and outgoing media)
-  - All image analysis happens on your device
-  - No images ever sent to external servers
-  - Protects children from inappropriate content
-  - Optional pre-send checks for outgoing images
-- Conversation tracking and analytics
-- Theme customization and color extraction
+- Contact synchronisation
+- NSFW content detection
+- Conversation analysis and summaries
+- Theme customisation
+- Local AI features
 
 ### Cloud Processing (Optional)
 Only when you explicitly use these features:
@@ -217,6 +216,8 @@ Only when you explicitly use these features:
 - Style transfer (Google Gemini)
 - Cloud AI Assistant (Google Gemini)
 - Location sharing (Google Maps)
+- Theme sharing (Firebase)
+- Cloud backup (Google Drive)
 
 ## Data Sharing and Disclosure
 
@@ -224,8 +225,6 @@ Only when you explicitly use these features:
 - Sell your personal information to third parties
 - Share your messages with advertisers
 - Transmit your message content to our servers
-- **Upload photos or images to our servers or third-party services**
-- **Send images to external servers for analysis (all NSFW detection is on-device)**
 - Share your contacts with third parties
 - Use your data for advertising purposes
 - Track your location without explicit permission
@@ -241,7 +240,9 @@ Only when you explicitly use these features:
 - **Google Maps:** Location coordinates when you share your location
 - **Google Translate:** Message text when you use translation features
 - **Google Gemini AI:** Message text when you use AI assistant or style transfer features
-- **Google Play:** Billing and license validation data for premium features
+- **Google Play:** Billing and licence validation data for premium features
+- **Firebase:** Theme data when you use cloud sharing features
+- **Google Drive:** Backup data when you use cloud backup features
 
 #### 3. Legal Requirements
 We may disclose your information if required to do so by law or in response to:
@@ -262,156 +263,82 @@ We may disclose your information if required to do so by law or in response to:
 
 ## Data Security
 
-### Encryption and Protection
-- **Local Database:** All data stored on your device is protected by SQLCipher encryption with AES-256
-- **Encryption Keys:** Device-specific encryption keys stored securely in Android KeyStore
-- **Secure Storage:** Sensitive settings and API keys are stored using Android's Secure Storage
-- **In-Transit:** Communications with Google services use TLS/SSL encryption
-- **File Provider:** Secure file sharing using Android's FileProvider architecture
+### Protection and Storage
+- **Local Data:** Stored within Android’s **secure app sandbox**, isolated from other apps.
+- **System Protection:** Modern Android devices apply the operating system’s **native file-level encryption** to on-device files.
+- **In-Transit:** Communications with Google services use **TLS/SSL**.
+- **Secure Storage:** Sensitive keys and settings use Android’s secure storage mechanisms.
+- **File Access:** Other apps cannot access Wise SMS data without explicit user consent through system prompts.
 
 ### Security Measures
-- HMAC-based verification for premium license validation
-- Signature-only permissions for internal broadcast receivers
-- Network security configuration for secure API communications
+- Signature-only permissions for internal broadcasts
+- Network security configuration enforcing HTTPS/TLS
 - Regular security updates and patches
 
 ### Limitations
-While we implement strong security measures for local data storage, please note:
-- Your device's security depends on your screen lock and device settings
-- We cannot guarantee security of data in transit through your carrier's network
-- Third-party services (Google) have their own security measures and policies
+- Your device’s security depends on your screen lock, biometrics, and OS version.
+- We cannot guarantee the security of data in transit through your carrier’s network.
+- Third-party services (Google) have their own security measures and policies.
 
 ## Data Retention
 
 ### Local Data
-- **Messages:** Stored on your device (soft-deleted when removed, see Deletion Methods below)
-- **Contacts:** Synchronized with your device contacts; removed when you delete them from your device
-- **Media:** Stored on your device (soft-deleted when removed)
+- **Messages:** Stored on your device until you delete them
+- **Contacts:** Synced with your device contacts; removed when you delete them
+- **Media:** Stored on your device until you delete them
 - **Settings:** Retained until you uninstall the app or clear app data
 - **Conversation Tracking:** Stored locally; can be cleared through app settings
-- **Themes:** Stored locally (soft-deleted when removed)
 
-### Deletion Methods
+### Cloud Data (Optional Features)
+- **Shared Themes:** Retained in Firebase until you delete them
+- **Cloud Backups:** Retained in your Google Drive until you delete them
+- **Google Service Data:** Subject to Google's retention policies
 
-**Important: Understanding Data Deletion**
+### Deletion
+You can delete your local data by:
+- Deleting individual messages or conversations within the app
+- Clearing app data through Android Settings > Apps > Wise SMS > Storage > Clear Data
+- Uninstalling the application
 
-The app uses a **soft-delete system** for normal deletion operations:
-
-**When you delete messages or conversations within the app:**
-- Items are marked as deleted and hidden from view
-- Data remains in the encrypted database (not immediately purged)
-- This allows for potential recovery features and system integrity
-- Deleted items are not displayed in the app interface
-
-**To permanently remove all data from your device:**
-- **Clear Cache/Data:** Android Settings > Apps > Wise SMS > Storage > Clear Cache and Clear Data
-- **Uninstall:** Uninstalling the application removes all local data permanently
-- These methods completely erase all information from the encrypted database
-
-**Why Soft Delete?**
-- Maintains database integrity and referential relationships
-- Allows for system recovery and troubleshooting
-- Prevents corruption of conversation threads
-- Data remains encrypted and inaccessible through the app interface
-
-**Data Protection:**
-- Even "soft-deleted" data remains encrypted in the local database
-- Deleted items cannot be viewed or accessed through the app
-- Only accessible through direct database inspection with proper tools
-- Completely removed when you clear app data or uninstall
+For cloud data:
+- Delete shared themes through the app's theme management interface
+- Revoke Google Drive access and delete backup files from your Google Drive
+- Contact the respective service providers (Google) for data deletion
 
 ## Children's Privacy
 
-**Wise SMS is specifically designed for children and families, including children under the age of 13.**
+Wise SMS is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.
 
-The app is intended to be a safe, supervised messaging environment for children to communicate with family members and approved contacts under parental supervision.
+**Parental Controls:** The app includes optional parental control features designed to help parents monitor and restrict messaging for minors. These features:
+- Allow parents to set time restrictions on app usage
+- Enable contact whitelisting to limit who can be messaged
+- Provide content filtering options
+- Are configured and controlled by the parent/guardian
 
-### Parental Control and Supervision
-
-**Parent/Guardian Role:**
-- Parents or guardians set up and configure the app on their child's device
-- All personal information is entered by the parent/guardian, not the child
-- Parents control all privacy settings and permissions
-- Parents designate approved contacts (typically family members)
-- Children cannot independently modify privacy settings or add contacts without parental approval
-
-**How Information Is Collected:**
-- **Parent-Provided Data:** Parents/guardians enter contact information, configure settings, and set up the child's account
-- **Child's Use:** Children use the app to send/receive messages only with parent-approved contacts
-- **No Independent Registration:** Children cannot sign up for the app independently - it must be set up by a parent/guardian
-- **Supervised Environment:** All app features are under parental control
-
-### COPPA Compliance
-
-We comply with the Children's Online Privacy Protection Act (COPPA):
-- We do not collect personal information directly from children
-- Parents provide all personal information and configuration
-- Parents have full control over what data is accessible
-- Parents can review and delete all data at any time through the app
-- We do not share children's information with third parties for marketing purposes
-- We do not display advertisements to children
-
-### Parental Control Features
-
-The app includes comprehensive parental control features:
-- **Time Restrictions:** Parents can set when the app can be used
-- **Contact Whitelisting:** Parents control who the child can message
-- **Photo/Video Sharing Controls:**
-  - Photo sharing is **OFF by default** - parent must enable it
-  - Parents can completely disable photo/video sharing
-  - Parents can enable optional NSFW checks on outgoing images
-  - All image analysis runs locally on device (never sent to servers)
-- **Content Filtering:**
-  - Automatic NSFW detection for received media (runs locally on device)
-  - Optional NSFW checks for outgoing media before sending
-  - Failed checks prevent image from being sent
-- **Message Monitoring:** Parents can review message history
-- **AI Assistant Limits:** Parents control if and when AI features are accessible
-- **Location Controls:** Parents control location sharing capabilities
-
-### Parental Rights
-
-Parents and guardians have the right to:
-- **Review:** Access all data collected about their child through the app interface
-- **Delete:** Permanently remove all child data at any time
-- **Control:** Manage all privacy settings and permissions
-- **Revoke:** Uninstall the app and remove all data
-- **Contact Us:** Request information about data practices
-
-### Data Minimization for Children
-
-For child users specifically:
-- Only essential contact information (provided by parents)
-- Messages stored locally on the child's device
-- Photos/videos processed entirely on-device (never uploaded to servers)
-- NSFW detection runs locally to protect children (no server uploads)
-- Photo sharing OFF by default (parent must enable)
-- No online profiles or social features
-- No data sharing with third parties (except parent-approved messaging)
-- No behavioral tracking or advertising
-- No collection of data for marketing purposes
-
-If you have questions about how we handle children's information, please contact us using the information provided at the end of this policy.
+If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can delete the information.
 
 ## Your Rights and Choices
 
 ### Access and Control
-You (or parents/guardians for child users) have the right to:
+You have the right to:
 - **Access:** View all data stored by the app through its interface
 - **Modify:** Edit or delete messages, contacts, and settings at any time
-- **Delete:** Permanently remove all app data by clearing app data or uninstalling
+- **Export:** Back up your data using the cloud backup feature
+- **Delete:** Remove all app data by clearing app data or uninstalling
 
 ### Permission Management
 You can manage permissions at any time through Android Settings:
 - **Revoke Permissions:** Settings > Apps > Wise SMS > Permissions
 - **Location Controls:** Choose "While using the app" or "Deny" for location access
-- **Notification Controls:** Customize notification settings through the app or system settings
+- **Notification Controls:** Customise notification settings through the app or system settings
 - **Storage Controls:** Manage storage permissions for camera and gallery access
 
 ### Opt-Out Options
-- **AI Features:** Don't use the AI Assistant or disable it in settings (parents can disable for children)
-- **Translation:** Don't use the translation feature; no data is sent if you don't use it
-- **Location Sharing:** Don't use the location sharing feature (parents control for children)
+- **AI Features:** Don’t use the AI Assistant or disable it in settings
+- **Translation:** Don’t use the translation feature; no data is sent if you don’t use it
+- **Location Sharing:** Don’t use the location sharing feature
+- **Cloud Backup:** Don’t enable cloud backup features
+- **Theme Sharing:** Don’t share themes publicly
 - **Google Services:** Opt out of optional Google service features
 
 ### Advertising
@@ -421,7 +348,7 @@ We do not display advertisements, so there are no advertising IDs or tracking fo
 
 ### Data Location
 - **Local Data:** Stored on your device (location depends on your physical location)
-- **Cloud Services:** Data sent to Google services may be processed in various countries where Google operates data centers
+- **Cloud Services:** Data sent to Google services may be processed in various countries where Google operates data centres
 
 ### Google Services
 When you use optional features that rely on Google services (Maps, Translate, Gemini, Firebase, Drive), your data may be transferred to and processed in countries outside your own. Google complies with applicable data protection laws including GDPR for European users.
@@ -449,6 +376,8 @@ This app integrates with several third-party services. Each service has its own 
 - **Google Translate:** https://cloud.google.com/terms/cloud-privacy-notice
 - **Google Gemini AI:** https://ai.google/responsibility/principles/
 - **Google Play Services:** https://policies.google.com/privacy
+- **Firebase:** https://firebase.google.com/support/privacy
+- **Google Drive:** https://policies.google.com/privacy
 
 **Your Responsibility:** We encourage you to review the privacy policies of these third-party services to understand how they collect, use, and share your data.
 
@@ -466,15 +395,15 @@ We request only the permissions necessary for app functionality:
 - **SMS Permissions:** Required for core messaging features
 - **Contacts:** Optional; required only if you want contact integration
 - **Camera:** Optional; required only if you want to capture photos in the app
-- **Storage:** Optional; required only for accessing gallery images
+- **Storage/Media:** Optional; required only for accessing gallery images
 - **Location:** Optional; required only for location sharing features
 - **Notifications:** Optional; recommended for message alerts
 
 ### Google Play Policy Compliance
 This app complies with:
 - Google Play Developer Program Policies
-- Google Play's User Data Policy
-- Android's permissions best practices
+- Google Play’s User Data Policy
+- Android’s permissions best practices
 - Appropriate use of sensitive permissions
 
 ### Data Protection Laws
@@ -501,7 +430,7 @@ If you have questions or concerns about this Privacy Policy or our data practice
 
 **Developer Contact:**
 - **App Name:** Wise SMS
-- **Contact Method:** info@xeduportal.com
+- **Contact Method:** [Your Contact Email]
 - **Support:** Available through Google Play Store listing
 
 **Response Time:** We will respond to privacy-related inquiries within 30 days.
@@ -524,8 +453,8 @@ Our app does not track users across third-party websites or apps and therefore d
 ### Automated Decision Making
 We do not use automated decision-making or profiling that produces legal effects or similarly significant effects on users.
 
-### Data Minimization
-We practice data minimization by:
+### Data Minimisation
+We practise data minimisation by:
 - Collecting only data necessary for app functionality
 - Processing most data locally on your device
 - Using cloud services only for optional features you explicitly enable
@@ -548,18 +477,15 @@ You can withdraw consent at any time by:
 
 ## Summary for Google Play Store
 
-**Privacy Summary:**
-Wise SMS is a privacy-focused messaging app that stores all message data locally on your device. We do not transmit your messages to our servers. Optional features like translation, AI assistance, and location sharing use Google services with your explicit consent. We do not sell your data or use it for advertising. Your carrier handles SMS/MMS transmission according to their privacy policy.
+**Privacy Summary:**  
+Wise SMS stores message data locally on your device and does not transmit messages to our servers. Optional features like translation, AI assistance, and location sharing use Google services with your explicit consent. We do not sell your data or use it for advertising. Your carrier handles SMS/MMS transmission according to their privacy policy.
 
 **Data Safety:**
 - **Collected:** Messages (local only), Contacts (local only), Location (optional), Photos (optional)
 - **Shared:** Only with Google services when you use optional features (translation, AI, maps)
-- **Security:** Local encryption, secure storage, TLS for cloud communications
-- **Deletion:** Full control - delete data anytime through app settings or uninstall
+- **Security:** Protected by Android’s native file encryption and app sandboxing; TLS for cloud communications
+- **Deletion:** Full control — delete data anytime through app settings or uninstall
 
 ---
 
 **Last Updated:** October 27, 2025
-
-This privacy policy is effective immediately for all users of Wise SMS.
-
